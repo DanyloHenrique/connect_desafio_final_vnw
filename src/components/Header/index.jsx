@@ -4,9 +4,9 @@ import { LuEllipsis } from 'react-icons/lu'
 import eu from '@/assets/eu.jpg'
 import styles from './header.module.scss'
 
-import { Logo } from '../logo'
-import { ListLinks } from '../Nav/ListLinks'
-import { DialogNav } from '../Nav/DialogNav'
+import { Logo } from '@/components/logo'
+import { ListLinks } from '@/components/Nav/ListLinks'
+import { DialogNav } from '@/components/Nav/DialogNav'
 import { useState } from 'react'
 
 export function Header() {

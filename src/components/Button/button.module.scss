@@ -1,0 +1,32 @@
+.button {
+  @include vars.style-text(
+    vars.$font-family-primary,
+    600,
+    vars.$font-size-md,
+    1.2
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+
+  padding: 0.5rem 2rem;
+  background-color: vars.$color-blue-700;
+  color: vars.$color-white;
+  border-radius: 0.625rem;
+  transition: color 300ms ease-in;
+
+  &:hover {
+    background-color: vars.$color-blue-800;
+  }
+
+  &__secondary {        
+    background-color: vars.$color-orange-300;
+    border-radius: 0px;
+
+    &:hover {
+      background-color: vars.$color-orange-400;
+    }
+  }
+}

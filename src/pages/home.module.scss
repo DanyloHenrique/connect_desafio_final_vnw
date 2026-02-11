@@ -1,0 +1,81 @@
+.container {
+  margin: 2rem 0 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.125rem;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    color: vars.$color-blue-700;
+
+    h1 {
+      font-size: vars.$font-size-xl;
+      margin-bottom: 1.25rem;
+    }
+
+    &__statsItemsList{
+      display: flex;
+      justify-items: center;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__img {
+    width: 20rem;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: vars.$breakpoint-large) {
+  .container {
+    margin: 0;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+
+    text-align: start;
+
+    &__content {
+      margin-top: 3rem;
+      word-wrap: break-word;
+      gap: clamp(1.5rem, -2.192rem + 5.77vw, 3rem);
+
+      &__info {
+        h1 {
+          @include vars.style-text(
+            vars.$font-family-primary,
+            700,
+            vars.$font-size-2xl,
+            1.1
+          );
+          font-size: clamp(3.75rem, 6vw, 5.625rem);
+          margin-bottom: 1.25rem;
+        }
+
+        p {
+          @include vars.style-text(
+            vars.$font-family-secondary,
+            400,
+            vars.$font-size-md,
+            1.5
+          );
+
+          font-size: clamp(1rem, -0.231rem + 1.92vw, 1.5rem);
+        }
+      }
+    }
+
+    &__img {
+      width: auto;
+      height: 30rem;
+      object-fit: cover;
+    }
+  }
+}

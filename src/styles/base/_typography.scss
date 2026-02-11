@@ -1,0 +1,56 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixin" as mixin;
+
+.display-lg {
+  @include mixin.style-text(
+    vars.$font-family-primary,
+    700,
+    vars.$font-size-2xl,
+    1.1
+  );
+}
+
+.display-md {
+  @include mixin.style-text(
+    vars.$font-family-primary,
+    700,
+    vars.$font-size-xl,
+    1.1
+  );
+}
+
+.heading-lg {
+  @include mixin.style-text(
+    vars.$font-family-primary,
+    700,
+    vars.$font-size-lg,
+    1.2
+  );
+}
+
+.body-lg {
+  @include mixin.style-text(
+    vars.$font-family-secondary,
+    400,
+    vars.$font-size-md,
+    1.5
+  );
+}
+
+.caption {
+  @include mixin.style-text(
+    vars.$font-family-primary,
+    600,
+    vars.$font-size-md,
+    1.2
+  );
+}
+
+.body-md {
+  @include mixin.style-text(
+    vars.$font-family-secondary,
+    400,
+    vars.$font-size-sm,
+    1.5
+  );
+}

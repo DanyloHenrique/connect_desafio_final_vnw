@@ -1,0 +1,45 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixin" as mixin;
+
+#root {
+  @include mixin.style-text(
+    vars.$font-family-secondary,
+    400,
+    vars.$font-size-sm,
+    1.5
+  );
+
+  background-color: vars.$color-slate-50;
+  color: vars.$color-slate-950;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100dvh;
+}
+
+main {
+  flex: 1;
+  padding: 0 1.5rem;
+
+  @media (min-width: vars.$breakpoint-large) {
+    padding: 0 3rem;
+  }
+}
+
+.mobile {
+  display: block;
+  line-height: 0;
+}
+.desktop {
+  display: none;
+}
+@media (min-width: vars.$breakpoint-large) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}

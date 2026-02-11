@@ -1,0 +1,16 @@
+.statsItems {
+  text-align: center;
+  h2 {
+    @include vars.style-text(vars.$font-family-primary, 700, 50px, 1.1);
+    font-size: clamp(2rem, -0.769rem + 4.33vw, 3.125rem);
+  }
+
+  p {
+    @include vars.style-text(
+      vars.$font-family-secondary,
+      400,
+      vars.$font-size-sm,
+      1.2
+    );
+  }
+}

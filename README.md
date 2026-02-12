@@ -75,7 +75,7 @@ Antes de começar, você precisará ter instalado em sua máquina as seguintes f
 $ git clone https://github.com/DanyloHenrique/connect_desafio_final_vnw.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd connect-desafio-final
+$ cd connect_desafio_final_vnw
 
 # Instale as dependências
 $ npm install

@@ -12,7 +12,9 @@ export const Card = ({
 }) => {
   return (
     <article className={styles.card}>
-      <img src={imgSrc} alt={imgAlt} />
+      <div className={styles.card__containerImage}>
+        <img src={imgSrc} alt={imgAlt} />
+      </div>
       <div className={styles.card__info}>
         <h3>{title}</h3>
 

@@ -1,9 +1,6 @@
-import React from 'react'
-
-import { FiMapPin, FiMail, FiCalendar } from 'react-icons/fi'
+import { FiCalendar, FiMail, FiMapPin } from 'react-icons/fi'
 
 import eu from '@/assets/eu.jpg'
-
 import styles from './user.module.scss'
 
 const UserPage = () => {
